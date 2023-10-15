@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
 import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 
+/**
+ * Home component for the Coin Changes app.
+ * @returns {JSX.Element} The Home component.
+ */
 const Home = () => {
   const [billAmount, setBillAmount] = useState('');
   const [change, setChange] = useState([]);
 
+  /**
+   * Calculates the change for the given bill amount and updates the state with the calculated change.
+   */
   const calculateChange = () => {
     const denominations = [1000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
     let remainingAmount = billAmount;
