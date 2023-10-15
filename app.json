@@ -8,6 +8,17 @@
       "expo-router"
     ],
     "name": "coin_changes",
-    "slug": "coin_changes"
+    "slug": "coin_changes",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "39f7029a-0783-485c-acdf-b37b40da95b4"
+      }
+    },
+    "android": {
+      "package": "com.th4ki3f"
+    }
   }
 }
